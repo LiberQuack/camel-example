@@ -13,7 +13,7 @@ wheel by providing easy methods to track, handle and deliver messages
 
 You need to consume some xmls from `./invoices-folder/*` then
  - Send xmls with the tag `<valid>true</valid>` to `QUEUE:VALID_INVOICES` then to `DATABASE`
- - Send xmls with the tag `<valid>false</valid>` to `QUEUE:INVALID_INVOICES` and save them into `./`
+ - Send xmls with the tag `<valid>false</valid>` to `QUEUE:INVALID_INVOICES` and save them into `./invalid-invoices-folder`
 
 ![EIP](./docs/diagram.png)
 
