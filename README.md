@@ -15,6 +15,6 @@ You need to consume some xmls from `./invoices-folder/*` then
  - Send xmls with the tag `<valid>true</valid>` to `QUEUE:VALID_INVOICES` then to `DATABASE`
  - Send xmls with the tag `<valid>false</valid>` to `QUEUE:INVALID_INVOICES` and save them into `./invalid-invoices-folder`
 
-![EIP](./docs/diagram.png)
-
 [Camel Route Implementation](./src/main/java/poc/routes/MainRoute.groovy)
+
+![EIP](./docs/diagram.png)
