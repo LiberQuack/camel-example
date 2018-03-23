@@ -9,8 +9,12 @@ Companies always need to integrate different systems, doing so they come across 
 challenges... Camel comes with the responsibility to prevent us from reinventing the
 wheel by providing easy methods to track, handle and deliver messages
 
-<hr>
+## Case 1
 
-## Examples
+You need to consume some xmls from `./invoices-folder/*` then
+ - Send xmls with the tag `<valid>true</valid>` to `QUEUE:VALID_INVOICES` then to `DATABASE`
+ - Send xmls with the tag `<valid>false</valid>` to `QUEUE:INVALID_INVOICES` and save them into `./`
 
 ![EIP](./docs/diagram.png)
+
+[Camel Route Implementation](./src/main/java/poc/routes/MainRoute.groovy)
