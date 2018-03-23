@@ -8,3 +8,9 @@ when dealing with different type of protocols
 Companies always need to integrate different systems, doing so they come across some
 challenges... Camel comes with the responsibility to prevent us from reinventing the
 wheel by providing easy methods to track, handle and deliver messages
+
+<hr>
+
+## Examples
+
+![EIP](./docs/diagram.png)
